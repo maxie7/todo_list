@@ -21,8 +21,18 @@ gem 'omniauth-facebook'
 gem 'carrierwave'
 gem 'cloudinary'
 
+gem 'bower-rails'
+gem 'active_model_serializers'
+gem 'angular-rails-templates'
+gem 'bootstrap-sass', '~> 3.3.7'
+
 group :development, :test do
-  gem 'byebug'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'faker'
 end
 
 group :development do
