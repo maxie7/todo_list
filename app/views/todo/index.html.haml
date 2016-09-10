@@ -1,0 +1,10 @@
+%div{"ng-app" => "todo_list"}
+  .view-container
+    .container.error_messages_list{:style => "height:70px;"}
+      - flash.each do |key, value|
+        - key = 'warning' if key == 'alert'
+        - key = 'success' if key == 'notice'
+        %div{:class => "alert alert-#{key}"}
+          %i.glyphicon.glyphicon-exclamation-sign
+          = value
+    %div{"ng-view" => ""}

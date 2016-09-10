@@ -1,0 +1,14 @@
+development:
+  cloud_name: "maxie7"
+  api_key: "555864736413674"
+  api_secret: "HO18OJ83blaj--Q1hYeUlxW0bxY"
+
+production:
+  cloud_name: "maxie7"
+  api_key: "555864736413674"
+  api_secret: "HO18OJ83blaj--Q1hYeUlxW0bxY"
+
+test:
+  cloud_name: "maxie7"
+  api_key: "555864736413674"
+  api_secret: "HO18OJ83blaj--Q1hYeUlxW0bxY"
