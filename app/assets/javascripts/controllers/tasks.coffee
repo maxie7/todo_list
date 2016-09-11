@@ -23,7 +23,7 @@ controllers.controller 'TasksController', [
 
     $scope.updateTask = (value, id) ->
       Task.update {id: id, title: value }, ->
-      return value
+      return true
 
     $scope.updateStatus = (id, status, key) ->
       Task.update {id: id, status: !status}, ->
@@ -43,10 +43,10 @@ controllers.controller 'TasksController', [
           id: value.id
           position: key
 
-     angular.forEach $scope.projects, (value, key) ->
-       $scope.$watchCollection value, ->
-       $scope.projects[key].tasks = orderByFilter($scope.projects[key].tasks, [ 'position' ])
+    angular.forEach $scope.projects, (value, key) ->
+      $scope.$watchCollection value, ->
+      $scope.projects[key].tasks = orderByFilter($scope.projects[key].tasks, [ 'position' ])
 
-     $scope.showComments = false;
+    $scope.showComments = false;
 
 ]

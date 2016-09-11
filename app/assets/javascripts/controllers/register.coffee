@@ -6,6 +6,11 @@ controllers.controller 'RegisterController', [
   'Auth'
   '$location'
   ($scope, $http, Auth, $location) ->
+
+    if (Auth._currentUser)
+      console.log('Hello nigA')
+      $location.path('/')
+
     config = headers: 'X-HTTP-Method-Override': 'POST'
 
     $scope.register = (data) ->
