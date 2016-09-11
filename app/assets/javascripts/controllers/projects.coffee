@@ -25,7 +25,7 @@ controllers = angular.module('todo_list')
 
 
      $scope.deleteProject = (id,key) ->
-       Project.destroy { id: id }, ->
+       Project.destroy {id: id}, ->
          $scope.projects.splice key, 1
 
      $scope.updateProject = (value, id) ->
