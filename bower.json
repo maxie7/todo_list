@@ -30,6 +30,7 @@
     "ng-file-upload": null,
     "ngDialog": null,
     "angular-editable-text": null,
-    "angular-ui-date": null
+    "angular-ui-date": null,
+    "AngularDevise": "angular-devise#^1.3.0"
   }
 }
