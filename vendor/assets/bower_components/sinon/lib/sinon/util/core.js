@@ -220,7 +220,7 @@
             }
 
             for (prop in a) {
-                if (hasOwn.call(a, prop)) {
+                if (a.hasOwnProperty(prop)) {
                     aLength += 1;
 
                     if (!(prop in b)) {
@@ -234,7 +234,7 @@
             }
 
             for (prop in b) {
-                if (hasOwn.call(b, prop)) {
+                if (b.hasOwnProperty(prop)) {
                     bLength += 1;
                 }
             }

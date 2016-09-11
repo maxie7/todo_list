@@ -84,24 +84,6 @@
             assert(iterator.calledWith("enumerable parent prop", "enumerableParentProp", parentProto));
         },
 
-        "should always invoke getters on the original receiving object": function () {
-            var Target = function Target() {
-                this.o = { foo: "foo" };
-            };
-            Object.defineProperty(Target.prototype, "computedFoo", {
-                enumerable: true,
-                get: function () {
-                    return "computed " + this.o.foo;
-                }
-            });
-            var target = new Target();
-            var iterator = sinon.spy();
-
-            sinon.walk(target, iterator);
-
-            assert(iterator.calledWith("computed foo", "computedFoo", target));
-        },
-
         "should fall back to for..in if getOwnPropertyNames is not available": function () {
             var getOwnPropertyNames = Object.getOwnPropertyNames;
             var Target = function Target() {
@@ -139,19 +121,6 @@
             }
 
             assert.isNull(err, "sinon.walk tests failed with message '" + (err && err.message) + "'");
-        },
-
-        "does not walk the same property twice": function () {
-            var parent = {
-                func: function () {}
-            };
-            var child = sinon.create(parent);
-            child.func = function () {};
-            var iterator = sinon.spy();
-
-            sinon.walk(child, iterator);
-
-            assert.equals(iterator.callCount, 1);
         }
     });
 }(this));

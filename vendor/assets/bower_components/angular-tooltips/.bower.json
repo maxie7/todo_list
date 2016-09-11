@@ -40,6 +40,7 @@
     "commit": "98788faaf65776ab2cd1863e3570bc2f2fef5cd5"
   },
   "_source": "https://github.com/720kb/angular-tooltips.git",
-  "_target": "*",
-  "_originalSource": "angular-tooltips"
+  "_target": "^1.1.7",
+  "_originalSource": "angular-tooltips",
+  "_direct": true
 }

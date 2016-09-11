@@ -12,14 +12,14 @@
   "description": "shim for ng-file-upload for non html5 browsers IE8-9",
   "ignore": [],
   "license": "MIT",
-  "version": "12.2.8",
-  "_release": "12.2.8",
+  "version": "9.0.3",
+  "_release": "9.0.3",
   "_resolution": {
     "type": "version",
-    "tag": "12.2.8",
-    "commit": "77cbca001137d55e3470eb7fd663ceaa100dc127"
+    "tag": "9.0.3",
+    "commit": "4eb030e524d323f5e01dbbf013339a1161665444"
   },
-  "_source": "https://github.com/danialfarid/angular-file-upload-shim-bower.git",
+  "_source": "git://github.com/danialfarid/angular-file-upload-shim-bower.git",
   "_target": "*",
   "_originalSource": "ng-file-upload-shim"
 }

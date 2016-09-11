@@ -36,6 +36,7 @@
     "commit": "1b3240551cfd6b30ef455a76a90a964ef64d6112"
   },
   "_source": "https://github.com/vitalets/angular-xeditable.git",
-  "_target": "*",
-  "_originalSource": "angular-xeditable"
+  "_target": "^0.3.0",
+  "_originalSource": "angular-xeditable",
+  "_direct": true
 }

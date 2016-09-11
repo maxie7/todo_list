@@ -32,19 +32,19 @@
     "Gruntfile.js"
   ],
   "dependencies": {
-    "angular": "~1.5"
+    "angular": "^1.4.x"
   },
   "devDependencies": {
-    "angular-mocks": "~1.5"
+    "angular-mocks": "^1.4.x"
   },
-  "version": "0.6.4",
-  "_release": "0.6.4",
+  "version": "0.5.5",
+  "_release": "0.5.5",
   "_resolution": {
     "type": "version",
-    "tag": "v0.6.4",
-    "commit": "f831b95cd29f7ab615bdea773a289c5b8c7e698f"
+    "tag": "0.5.5",
+    "commit": "f16b60adbcf81678124782797ca034b9f69506a9"
   },
-  "_source": "https://github.com/likeastore/ngDialog.git",
+  "_source": "git://github.com/likeastore/ngDialog.git",
   "_target": "*",
   "_originalSource": "ngDialog"
 }
