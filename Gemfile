@@ -26,6 +26,8 @@ gem 'bower-rails'
 gem 'active_model_serializers'
 gem 'angular-rails-templates'
 gem 'capybara'
+
+gem 'launchy'
 gem 'bootstrap-sass', '~> 3.3.7'
 
 group :development, :test do

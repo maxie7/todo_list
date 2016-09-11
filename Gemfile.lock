@@ -124,6 +124,8 @@ GEM
     jsonapi (0.1.1.beta2)
       json (~> 1.8)
     jwt (1.5.4)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     libv8 (3.16.14.15)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -284,6 +286,7 @@ DEPENDENCIES
   haml (~> 4.0)
   jbuilder (~> 2.0)
   jquery-rails
+  launchy
   omniauth-facebook
   pg (~> 0.15)
   rails (= 4.2.7.1)
