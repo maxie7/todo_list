@@ -3,9 +3,10 @@
 </div>
 <div class='task-text'>
         <div>
-            <span ng-class="{'done': task.status == true}" id="change_task_name" name='task_name[name]'editable-text="task.title" on-change="updateTask(value, task.id)"></span>
+            <span ng-class="{'done': task.status == true}" id="change_task_name" name='task_name[name]'editable-text="task.title" onbeforesave="updateTask(value, task.id)">{{ task.title || 'empty' }}</span>
             <span  class='pull-right glyphicon glyphicon-fire'ng-if="task.deadline"> {{task.deadline|date:"dd.MM.yy"}}</span>
         </div>
+
 
     <div class='comments' ng-controller='CommentsController' ng-show="showComments">
         <form name="nameOfComment" ng-submit='createComment(task.id,nameOfComment.name.$valid)' >

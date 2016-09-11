@@ -29,9 +29,11 @@ gem 'capybara'
 
 gem 'launchy'
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'poltergeist'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'jasmine-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers'
