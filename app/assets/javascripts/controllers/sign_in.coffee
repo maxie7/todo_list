@@ -8,7 +8,6 @@ controllers.controller 'SignInController', [
   ($scope, $http, Auth, $location) ->
 
     if (Auth._currentUser)
-      console.log('Hello niga')
       $location.path('/')
 
     config = headers: 'X-HTTP-Method-Override': 'POST'
@@ -37,4 +36,7 @@ controllers.controller 'SignInController', [
 
     $scope.$on 'devise:new-session', (event, currentUser) ->
 
+
+    $scope.$on 'devise:unauthorized', (event, xhr, deferred) ->
+      $location.path('/login')
 ]

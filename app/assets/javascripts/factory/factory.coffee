@@ -2,10 +2,7 @@ todo_list = angular.module('todo_list')
 
 todo_list.factory 'Projects', [
   '$resource'
-  'Auth'
-  '$location'
-  ($resource,Auth, $location) ->
-    ->
+  ($resource) ->
     $resource '/projects', {},
       'get': method: 'GET'
       'create':
@@ -79,13 +76,5 @@ todo_list.factory 'Comment', [
         params:
           id: '@id'
           text: '@text'
-
-]
-
-todo_list.factory 'CheckLogin', [
-  'Auth'
-  '$location'
-  (Auth, $location) ->
-    ->
 
 ]
