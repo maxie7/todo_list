@@ -16,7 +16,6 @@ controllers.controller 'SignInController', [
     ), (error) ->
       $('.alert_error').html '<div class="alert alert-danger" role="alert">' + error.data.error + '</div>'
 
-
     $scope.login = (data) ->
       Auth.login(data, config).then ((user) ->
       ), (error) ->
@@ -36,7 +35,8 @@ controllers.controller 'SignInController', [
 
     $scope.$on 'devise:new-session', (event, currentUser) ->
 
-
     $scope.$on 'devise:unauthorized', (event, xhr, deferred) ->
-      $location.path('/login')
+       if $location.path() == '/'
+         $location.path '/login'
+
 ]
