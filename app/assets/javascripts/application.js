@@ -25,7 +25,8 @@
 //= require bootstrap-sprockets
 //= require angular-ui-date/src/date
 //= require angular-xeditable
-//= require ui-bootstrap-custom-1.3.3.min.js
-//= require ui-bootstrap-custom-tpls-1.3.3.min.js
+//= require ui-bootstrap-custom-0.13.3.min.js
+//= require ui-bootstrap-custom-tpls-0.13.3.min.js
 //= require_tree ./templates
+
 //= require_tree .
