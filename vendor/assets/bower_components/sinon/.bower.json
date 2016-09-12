@@ -1,14 +1,15 @@
 {
   "name": "sinon",
   "homepage": "https://github.com/cjohansen/Sinon.JS",
-  "version": "1.17.0",
-  "_release": "1.17.0",
+  "version": "1.17.5",
+  "_release": "1.17.5",
   "_resolution": {
     "type": "version",
-    "tag": "v1.17.0",
-    "commit": "423c0556a072fb5da7a720733682614b2b10f37c"
+    "tag": "v1.17.5",
+    "commit": "127302c6d848b64dc46602d0bab511f910fc23a6"
   },
-  "_source": "git://github.com/cjohansen/Sinon.JS.git",
-  "_target": "*",
-  "_originalSource": "sinon"
+  "_source": "https://github.com/cjohansen/Sinon.JS.git",
+  "_target": "^1.17.5",
+  "_originalSource": "sinon",
+  "_direct": true
 }

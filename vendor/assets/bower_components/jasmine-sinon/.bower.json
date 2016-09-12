@@ -18,7 +18,8 @@
     "tag": "0.4.0",
     "commit": "12276ec175a9305ff83c962e5e9df4765642afcd"
   },
-  "_source": "git://github.com/froots/jasmine-sinon.git",
-  "_target": "*",
-  "_originalSource": "jasmine-sinon"
+  "_source": "https://github.com/froots/jasmine-sinon.git",
+  "_target": "^0.4.0",
+  "_originalSource": "jasmine-sinon",
+  "_direct": true
 }
