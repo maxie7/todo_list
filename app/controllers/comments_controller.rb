@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
       render json: { message: I18n.t('comment.error_update') }, status: 200
     end
   end
-
+  
   def destroy
     @comment.destroy
     render json: { nothing: true }
