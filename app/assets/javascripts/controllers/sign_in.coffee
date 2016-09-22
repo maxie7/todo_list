@@ -13,13 +13,12 @@ controllers.controller 'SignInController', [
     config = headers: 'X-HTTP-Method-Override': 'POST'
     Auth.currentUser().then ((user) ->
       $location.path '/'
-    ), (error) ->
+      ), (error) ->
       $('.alert_error').html '<div class="alert alert-danger" role="alert">' + error.data.error + '</div>'
 
     $scope.login = (data) ->
       Auth.login(data, config).then ((user) ->
       ), (error) ->
-        console.log(error)
         $('.alert_error').html '<div class="alert alert-danger" role="alert">' + error.data.error + '</div>'
 
     $scope.logout = ->
@@ -37,6 +36,6 @@ controllers.controller 'SignInController', [
 
     $scope.$on 'devise:unauthorized', (event, xhr, deferred) ->
        if $location.path() == '/'
-         $location.path '/login'
+        $location.path '/login'
 
 ]
