@@ -6,16 +6,16 @@ controllers.controller 'ProjectsController', [
   'Projects'
   'Project'
 
-  ($scope, $http, Projects, Project) ->
+  ($scope, $http, Projects,Project) ->
 
-    Projects.query (response) ->
+    Projects.get (response) ->
       $scope.projects = response.projects
       console.log($scope)
 
     $scope.createProject = (isValid)->
       if isValid
         Projects.create { name: $scope.nameProject}, (res) ->
-              $scope.projects.push(res.project)
+              $scope.projects.push res.project
               $scope.nameProject = ''
               $scope.showForm = false
 

@@ -78,3 +78,5 @@ todo_list.factory 'Comment', [
           text: '@text'
 
 ]
+
+
