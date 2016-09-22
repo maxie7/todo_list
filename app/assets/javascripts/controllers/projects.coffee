@@ -10,7 +10,6 @@ controllers.controller 'ProjectsController', [
 
     Projects.get (response) ->
       $scope.projects = response.projects
-      console.log($scope)
 
     $scope.createProject = (isValid)->
       if isValid
