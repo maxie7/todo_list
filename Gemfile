@@ -2,8 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'rails', '4.2.7.1'
-gem 'pg', '~> 0.15'
-gem 'sass-rails', '~> 5.0'
+gem 'pg', '~> 0.18'
 
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -22,12 +21,13 @@ gem 'carrierwave'
 gem 'cloudinary'
 
 gem 'bower-rails'
-gem 'active_model_serializers'
+gem 'active_model_serializers', '~> 0.9.3'
 gem 'angular-rails-templates'
 gem 'capybara'
 
 gem 'launchy'
 gem 'bootstrap-sass', '~> 3.3.7'
+gem 'sass-rails', '>= 3.2'
 gem 'poltergeist'
 
 group :development, :test do
