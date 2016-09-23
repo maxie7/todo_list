@@ -16,7 +16,7 @@ controllers.controller 'RegisterController', [
     $scope.register = (data) ->
       Auth.register(data, config).then ((registeredUser) ->
       ), (error) ->
-        ngToastFactory.successToast('Registration failed')
+        ngToastFactory.alertToast('Registration failed')
 
     $scope.$on 'devise:new-registration', (event, user) ->
       $location.path '/'
