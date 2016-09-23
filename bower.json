@@ -33,7 +33,7 @@
     "angular-ui-date": null,
     "sinon": null,
     "jasmine-sinon": null,
-    "ngtoast": null,
+    "ngToast": null,
     "angular-animate": null,
     "angular-sanitize": null
   }

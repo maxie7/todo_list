@@ -22,7 +22,7 @@
 //= require ng-file-upload
 //= require angular-sanitize
 //= require angular-animate
-//= require ngtoast
+//= require ngToast
 //= require ng-file-upload-shim
 //= require ngDialog
 //= require bootstrap-sprockets
