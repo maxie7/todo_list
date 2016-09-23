@@ -15,17 +15,17 @@ controllers.controller 'CommentsController', [
           }, (res) ->
           $scope.commentName = ''
           $scope.task.comments.push res.comment
-        ngToastFactory.successToast('Comment successfully created')
+        ngToastFactory.successToast('Comment was successfully created')
       else
         ngToastFactory.alertToast("Comment name can't be blank")
 
     $scope.deleteComment = (id,key) ->
       Comment.destroy {id:id}, (res) ->
         $scope.task.comments.splice key, 1
-        ngToastFactory.successToast('Comment successfully deleted')
+        ngToastFactory.successToast('Comment was successfully deleted')
 
     $scope.updateComment = (value, id) ->
       Comment.update {id: id, text: value }, ->
-        ngToastFactory.successToast('Comment successfully updated')
+        ngToastFactory.successToast('Comment was successfully updated')
       return true
 ]

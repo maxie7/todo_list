@@ -76,7 +76,17 @@ todo_list.factory 'Comment', [
         params:
           id: '@id'
           text: '@text'
-
 ]
 
-
+todo_list.factory 'ngToastFactory', [
+  'ngToast'
+  (ngToast) ->
+    successToast: (message) ->
+      ngToast.create
+        className: 'alert alert-success'
+        content: message
+    alertToast: (message) ->
+      ngToast.create
+        className: 'alert alert-danger'
+        content: message
+]

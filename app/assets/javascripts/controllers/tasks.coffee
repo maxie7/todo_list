@@ -6,7 +6,8 @@ controllers.controller 'TasksController', [
   'Tasks'
   'orderByFilter'
   'Task'
-  ($scope,$http,Tasks,orderByFilter,Task) ->
+  'ngToastFactory'
+  ($scope,$http,Tasks,orderByFilter,Task,ngToastFactory) ->
     $scope.createTask = (project_id,isValid) ->
       if isValid
         Tasks.create {
@@ -15,14 +16,19 @@ controllers.controller 'TasksController', [
           }, (res) ->
           $scope.taskName = ''
           $scope.project.tasks.push res.task
+        ngToastFactory.successToast 'Task was successfully created'
+      else
+        ngToastFactory.alertToast "Task name can't be blank"
 
 
     $scope.deleteTask = (id,key) ->
       Task.destroy {id:id},(res) ->
         $scope.project.tasks.splice key, 1
+        ngToastFactory.successToast "Task was successfully deleted"
 
     $scope.updateTask = (value, id) ->
       Task.update {id: id, title: value }, ->
+        ngToastFactory.successToast "Task was successfully updated"
       return
 
     $scope.updateStatus = (id, status, key) ->
