@@ -29,7 +29,7 @@ controllers.controller 'SignInController', [
       ), (error) ->
 
     $scope.$on 'devise:login', (event, currentUser) ->
-      ngToastFactory.successToast("Authorized")
+      # ngToastFactory.successToast("Authorized")
       $location.path '/'
 
     $scope.$on 'devise:logout', (event, oldCurrentUser) ->
