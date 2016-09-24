@@ -1,28 +1,11 @@
-== README
+## TODO Lists
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The application:
 
-Things you may want to cover:
+> https://stormy-peak-66311.herokuapp.com/
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Testing account:
+```
+login:    test@test.com
+password: qwerty642
+```
