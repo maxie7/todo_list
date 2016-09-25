@@ -21,7 +21,7 @@ feature 'comment', js: true do
     expect(page).to have_content 'New comment'
   end
 
-  scenario 'User delete comment successfully' do
+  scenario 'user delete comment successfully' do
 
     find('.li-task').hover
     find('.glyphicon-comment').click
@@ -33,10 +33,12 @@ feature 'comment', js: true do
     expect(page).not_to have_content comment.text
   end
 
-  scenario 'user can edit his tasks' do
-    find('#change_comment_name').click
-    fill_in 'comment_name[name]', with:"hello world"
-    find('#change_comment_name').native.send_keys(:return)
-    expect(page).to have_content('hello world')
+  scenario 'user can edit his comments' do
+    find('.li-task').hover
+    find('.glyphicon-comment').click
+    within('.comments-list') do
+      find('.glyphicon-pencil').click
+    end
   end
+  
 end

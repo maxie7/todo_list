@@ -1,7 +1,7 @@
 <div>
     <div ng-controller="UploadController">
 
-        <span id="change_task_name" name='task_name[name]' editable-text="comment.text" e-form="commentBtnForm" onbeforesave="updateComment($data,  comment.id)">
+        <span id="change_comment_name" name='comment_name[name]' editable-text="comment.text" e-form="commentBtnForm" onbeforesave="updateComment($data,  comment.id)">
                 <span >{{ comment.text || 'empty'}}</span>
         </span>
 

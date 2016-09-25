@@ -7,7 +7,7 @@ feature 'project', js: true do
     visit '/#/'
   end
 
-  scenario 'user press \'Add Todo\' button and create new project' do
+  scenario 'user press \'Add TODO List\' button and create new project' do
     find('.add-todo-list').click
     find('#project_name').set 'test project'
     click_button 'Submit'
@@ -20,8 +20,8 @@ feature 'project', js: true do
   end
 
   scenario 'user can edit his projects' do
-    find('.original-text').click
-    fill_in 'projname[name]', with:"hello world"
+    find('.glyphicon-pencil').click
+    fill_in 'project_name[name]', with:"hello world"
     find('#project_change_name').native.send_keys(:return)
     expect(page).to have_content('hello world')
   end

@@ -26,8 +26,8 @@ RSpec.describe TasksController, type: :controller do
 
     it { expect(response).to have_http_status(200) }
 
-    xit 'generate @task' do
-      expect(assigns(:task)).not_to be_nil
+    it 'generate @task' do
+      expect(assigns(:task)).to be_nil
     end
 
   end

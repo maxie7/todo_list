@@ -1,6 +1,7 @@
 require 'capybara/rspec'
 require 'cancan/matchers'
 require 'capybara/poltergeist'
+require 'shoulda-matchers'
 
 RSpec.configure do |config|
   config.include Capybara::DSL
