@@ -13,13 +13,13 @@ feature 'the register process', js: true do
       fill_in 'user[confirm_password]', with: user.password
     end
     click_button 'Sign Up'
-    expect(page).to have_content('SIMPLE TODO LIST')
+    expect(page).to have_content('SIMPLE TODO LISTS')
   end
 
   scenario 'user navigate to login page when he is already sign in' do
     login_as user, scope: :user
     visit '/#/register'
     expect(page).not_to have_button('Log in')
-    expect(page).to have_content('SIMPLE TODO LIST')
+    expect(page).to have_content('SIMPLE TODO LISTS')
   end
 end

@@ -21,7 +21,7 @@ controllers.controller 'SignInController', [
       Auth.login(data, config).then ((user) ->
         ngToastFactory.successToast('Successfull login')
       ), (error) ->
-        ngToastFactory.alertToast('Epic fail')
+        ngToastFactory.alertToast('Wrong email or password')
 
     $scope.logout = ->
       config = headers: 'X-HTTP-Method-Override': 'DELETE'
