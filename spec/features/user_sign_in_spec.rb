@@ -21,12 +21,11 @@ feature 'the sign in process', js: true do
       fill_in 'user[password]', with: user.password
     end
     click_button 'Log in'
-    expect(page).to have_content('Invalid email or password')
+    expect(page).to have_content('Wrong email or password')
   end
 
-  scenario 'user navigate to login page when he is already sign in' do
+  scenario 'user navigate to login page when he is already signed in' do
     login_as user, scope: :user
-    visit '/#/login'
     expect(page).not_to have_button('Log in')
     expect(page).to have_content('Add TODO List')
   end
