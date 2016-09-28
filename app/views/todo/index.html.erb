@@ -1,5 +1,6 @@
 <div ng-app="todo_list">
   <div class="view-container">
+    <% if !flash.empty? %>
     <div class="container error_messages_list" style="height:70px;">
       <% flash.each do |key, value| %>
          <% key = 'warning' if key == 'alert' %>
@@ -7,6 +8,7 @@
          <div class="alert alert-<%= key %>"><i class="glyphicon glyphicon-exclamation-sign"></i> <%= value %></div>
       <% end %>
     </div>
+    <% flash.clear %>
     <div ng-view></div>
   </div>
 </div>
