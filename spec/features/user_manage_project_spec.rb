@@ -9,7 +9,7 @@ feature 'project', js: true do
 
   scenario 'user press \'Add TODO List\' button and create new project' do
     find('.add-todo-list').click
-    find('#project_name').set 'test project'
+    fill_in 'Enter project name', with: 'test project'
     click_button 'Submit'
     expect(page).to have_content('test project')
   end

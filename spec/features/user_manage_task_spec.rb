@@ -31,7 +31,7 @@ feature 'task', js: true do
   end
 
   scenario 'user can edit his tasks' do
-    find('.original-text').click
+    find('.task-text').click
     fill_in 'task_name[name]', with:"hello world"
     find('#change_task_name').native.send_keys(:return)
     expect(page).to have_content('hello world')
